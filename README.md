@@ -12,7 +12,7 @@ The purpose of this container is to provide Ansible and AWS CLI.
 - boto3:latest
 - botocore:latest
 
-Build and Public to [dockerhub](https://hub.docker.com/repository/docker/tozonaran/ansible-awscli/general)
+Build and Push to [dockerhub](https://hub.docker.com/repository/docker/tozonaran/ansible-awscli/general)
 
 # Environment variables
 
