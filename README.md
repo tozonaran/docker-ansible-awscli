@@ -21,7 +21,18 @@ This image uses environment variables for configuration.
 |`AWS_ACCESS_KEY_ID`     |no default           | AWS Access Key                                     |
 |`AWS_SECRET_ACCESS_KEY` |no default           | AWS Secret Access Key                              |
 
-# Usage
+
+# Mounting your Ansible source code
+
+By default this container has created a working directory `/home/dev/sourcecode` and is the default working directory.
+
+You are able to mount your Ansible source code using the following cmd Docker parameter:-
+
+```
+-v /my/local/ansible/repo/code:/home/dev/sourcecode
+```
+
+# Example Usage
 
 In your Ansible projects root folder you are able to run the following Docker command.
 
@@ -33,6 +44,10 @@ docker run \
  tozonaran/ansible-awscli \
  ansible-playbook {{$YOUR_PLAYBOOK}}.yml
 ```
+
+# License
+
+Everything in [this repository](https://github.com/tozonaran/docker-ansible-awscli) is published under [GPL-3](https://spdx.org/licenses/GPL-3.0).
 
 # User Feedback
 
