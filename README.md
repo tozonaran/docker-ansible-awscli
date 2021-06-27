@@ -12,6 +12,8 @@ The purpose of this container is to provide Ansible and AWS CLI.
 - boto3:latest
 - botocore:latest
 
+Build and Public to [dockerhub](https://hub.docker.com/repository/docker/tozonaran/ansible-awscli/general)
+
 # Environment variables
 
 This image uses environment variables for configuration.
@@ -33,6 +35,10 @@ You are able to mount your Ansible source code using the following cmd Docker pa
 ```
 
 # Example Usage
+
+```
+docker pull tozonaran/ansible-awscli
+```
 
 In your Ansible projects root folder you are able to run the following Docker command.
 
